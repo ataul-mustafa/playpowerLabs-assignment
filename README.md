@@ -15,7 +15,7 @@ if you want to proceed see the whole documentation here, it is also available he
 1. Frontend setup
 2. backend setup
 3. API endpoints
-   
+
 
 
 1.
