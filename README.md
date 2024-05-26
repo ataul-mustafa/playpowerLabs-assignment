@@ -160,6 +160,7 @@ Description:
 
 2. Assignment Management
 POST /api/assignments
+
 Creates a new assignment.
 
 Middlewares:
@@ -174,6 +175,7 @@ Description:
 
 
 GET /api/assignments
+
 Retrieves all assignments of the authenticated teacher.
 Middleware:
 •	verifyToken
@@ -185,6 +187,7 @@ Description:
 
 
 GET /api/assignments/:id
+
 Retrieves a specific assignment by ID.
 Middleware:
 •	verifyToken
@@ -198,6 +201,7 @@ Description:
 
 
 PUT /api/assignments/:id
+
 Updates an existing assignment by ID.
 Middleware:
 •	verifyToken
@@ -214,6 +218,7 @@ Description:
 Allows partial or full update of the assignment.
 
 DELETE /api/assignments/:id
+
 Deletes a specific assignment by ID.
 Middleware:
 •	verifyToken
@@ -228,6 +233,7 @@ Description:
 .
 
 DELETE /api/assignments
+
 Deletes all assignments of the authenticated teacher.
 Middleware:
 •	verifyToken
@@ -240,6 +246,7 @@ Description:
 
 
 POST /api/assignments/:id
+
 Submits an assignment.
 Middleware:
 •	verifyToken
