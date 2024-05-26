@@ -22,7 +22,9 @@ if you want to proceed see the whole documentation here, it is also available he
 
 Frontend/Timezone Converter setup instructions
 Overview
+
 This project is a Timezone Converter application built using modern web technologies to provide a fast and interactive user experience. The main functionalities of this application include converting the time from one timezone to another and selecting timezones via a search bar and slider present in every timezon component. The project uses the following technologies:
+
 	Vite: A fast build tool and development server.
 	React: A JavaScript library for building user interfaces.
 	Moment-Timezone: A library for parsing, validating, manipulating, and formatting dates and times in different timezones.
@@ -31,15 +33,20 @@ This project is a Timezone Converter application built using modern web technolo
 	Project Structure
 
 Setup Instructions
+
 Prerequisites
+
 Ensure you have the following software installed:
 •	Node.js (v18.x or later)
 •	npm (v6.x or later)
+
 Step 1: Open the project
 Opent the project in playpower-assignment/frontend-timezone-convertor
+
 Step 2: Install Dependencies
 Install the required Node.js dependencies by running:
 npm install 
+
 Step 3: Start the Development Server
 Start the Vite development server by running:
 npm run dev 
@@ -49,6 +56,7 @@ Step 4: Build for Production
 To build the project for production, run:
 npm run build 
 The build outputs will be placed in the dist directory.
+
 Step 5: Preview the Production Build
 To preview the production build, you can use the Vite preview command:
 npm run preview 
@@ -77,10 +85,12 @@ For any questions or issues regarding the setup or usage of the project, please 
 2.
 
 Backend/student_assignment Setup instructions
+
 Overview
 This project is an Assignment Management System built using Node.js, Express.js, MySQL, and JWT for authentication. The system provides endpoints for user authentication, assignment creation, retrieval, update, deletion, and submission. The project follows the MVC (Model-View-Controller) architecture, ensuring a clear separation of concerns and maintainability.
 
 Setup Instructions
+
 Prerequisites
 Ensure you have the following software installed:
 Node.js (v12.x or later)
@@ -127,12 +137,15 @@ Contact: For any questions or issues regarding the setup or usage of the project
 3.
 
 API Endpoints Documentation
+
 Overview
 This document provides detailed information on the API endpoints for the assignment management system. The API is built using Node.js and Express.js, with MySQL as the database and JSON Web Tokens (JWT) for authentication. We have a postman api doucmation files that can execute directly in the postman.
 The base URL for all endpoints is http://localhost:3000.
 Authentication
 All endpoints that modify or retrieve assignments require authentication via a JWT token. The token must be included in the Authorization header of the request in the following format:
+
 Authorization:  <jwtToken> 
+
 Endpoints
 1. User Authentication
 POST /api/login
@@ -158,6 +171,8 @@ Response:
 Description:
 •	Validates the user using verifyToken middleware.
 •	Creates an assignment with the provided title, description, and due date.
+
+
 GET /api/assignments
 Retrieves all assignments of the authenticated teacher.
 Middleware:
@@ -167,6 +182,8 @@ Response:
 Description:
 •	Validates the user using verifyToken middleware.
 •	Returns all assignments created by the authenticated teacher.
+
+
 GET /api/assignments/:id
 Retrieves a specific assignment by ID.
 Middleware:
@@ -178,6 +195,8 @@ Response:
 Description:
 •	Validates the user using verifyToken middleware.
 •	Returns the assignment with the specified ID.
+
+
 PUT /api/assignments/:id
 Updates an existing assignment by ID.
 Middleware:
@@ -207,6 +226,7 @@ Description:
 •	Validates the user using verifyToken middleware.
 •	Ensures that only the teacher who created the assignment can delete it using teacherAuth
 .
+
 DELETE /api/assignments
 Deletes all assignments of the authenticated teacher.
 Middleware:
@@ -217,6 +237,7 @@ Response:
 Description:
 •	Validates the user using verifyToken middleware.
 •	Ensures that only the teacher who created the assignments can delete them using           teacherAuth middleware.
+
 
 POST /api/assignments/:id
 Submits an assignment.
