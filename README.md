@@ -6,7 +6,7 @@ Folder structure of repository
 1. backend-student_assignment (backend project code)
 2. documents (All neccessary documents like fronend setup, backend setup, api endpoints)
 3. frontend-timezon-convertor (frontend project code)
-
+   
 
 For better understanding of setup instruction and API endpoints you can refer the documantations available in documents directory of the repository. documents are very well written and easy to understand there.
 
@@ -15,7 +15,7 @@ if you want to proceed see the whole documentation here, it is also available he
 1. Frontend setup
 2. backend setup
 3. API endpoints
-
+   
 
 
 1.
