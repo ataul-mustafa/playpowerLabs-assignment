@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "3889526c-1d56-48aa-b6ab-f994b317f84b",
 		"name": "student_assignment",
+		"description": "This is the api documentation of student_assignment project given by the playpower labs.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24028901"
 	},
@@ -16,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"ataulmustafa1433\",\r\n    \"password\": \"ataul123\"\r\n}",
+							"raw": "{\r\n    \"username\": \"ataulmustafa\",\r\n    \"password\": \"ataul\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,12 +25,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/login",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/login",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"login"
@@ -50,13 +52,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYTE0MzMiLCJpYXQiOjE3MTY2MjIyNDgsImV4cCI6MTcxNjcwODY0OH0.Vg-viKt1Arf3t01tUyIlGKrmi4acBrR3VH77xaMV1eo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Node.js\",\r\n    \"description\": \"Create a server in node.js\",\r\n    \"due_date\": \"2024/06/10\"\r\n}",
+							"raw": "{\r\n    \"title\": \"python\",\r\n    \"description\": \"Create a python programm to find wether an year is leap or not\",\r\n    \"due_date\": \"2024/06/15\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -64,12 +66,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/assignments",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/assignments",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"assignments"
@@ -85,17 +88,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYTE0MzMiLCJpYXQiOjE3MTY2MjIyNDgsImV4cCI6MTcxNjcwODY0OH0.Vg-viKt1Arf3t01tUyIlGKrmi4acBrR3VH77xaMV1eo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/api/assignments",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/assignments",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"assignments"
@@ -111,21 +115,22 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYTE0MzMiLCJpYXQiOjE3MTY2MjIyNDgsImV4cCI6MTcxNjcwODY0OH0.Vg-viKt1Arf3t01tUyIlGKrmi4acBrR3VH77xaMV1eo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/api/assignments/6",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/assignments/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"assignments",
-								"6"
+								"1"
 							]
 						}
 					},
@@ -138,7 +143,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYTE0MzMiLCJpYXQiOjE3MTY2MjIyNDgsImV4cCI6MTcxNjcwODY0OH0.Vg-viKt1Arf3t01tUyIlGKrmi4acBrR3VH77xaMV1eo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
 								"type": "text"
 							},
 							{
@@ -149,7 +154,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Node.js\",\r\n    \"description\": \"Create a server in nodejs\",\r\n    \"due_date\": \"2024/06/13\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Node.js index\",\r\n    \"description\": \"Create a server in nodejs also and lab lab\",\r\n    \"due_date\": \"2024/06/17\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -157,16 +162,17 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/assignments/3",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/assignments/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"assignments",
-								"3"
+								"2"
 							]
 						}
 					},
@@ -179,21 +185,22 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYTE0MzMiLCJpYXQiOjE3MTY2MjIyNDgsImV4cCI6MTcxNjcwODY0OH0.Vg-viKt1Arf3t01tUyIlGKrmi4acBrR3VH77xaMV1eo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/api/assignments/5",
-							"protocol": "http",
+							"raw": "https://student-assignment.onrender.com/api/assignments/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"student-assignment",
+								"onrender",
+								"com"
 							],
-							"port": "3000",
 							"path": [
 								"api",
 								"assignments",
-								"5"
+								"1"
 							]
 						}
 					},
@@ -202,16 +209,64 @@
 				{
 					"name": "delete-all",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://student-assignment.onrender.com/api/assignments",
+							"protocol": "https",
+							"host": [
+								"student-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"assignments"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "submit",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF0YXVsbXVzdGFmYSIsImlhdCI6MTcxNzQ4MzU3NiwiZXhwIjoxNzE3NTY5OTc2fQ.wv3EiuplNny6eUeqSTOEhpwcLQMo8bs1OAXddnXM-LA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"response\": \"dummy response for Node.js\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://student-assignment.onrender.com/api/assignments/1",
+							"protocol": "https",
+							"host": [
+								"student-assignment",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"assignments",
+								"1"
+							]
+						}
 					},
 					"response": []
 				}
