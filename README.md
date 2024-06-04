@@ -140,7 +140,7 @@ API Endpoints Documentation
 
 Overview
 This document provides detailed information on the API endpoints for the assignment management system. The API is built using Node.js and Express.js, with MySQL as the database and JSON Web Tokens (JWT) for authentication. We have a postman api doucmation files that can execute directly in the postman.
-The base URL for all endpoints is http://localhost:3000.
+The base URL for all endpoints is https://student-assignment.onrender.com/
 Authentication
 All endpoints that modify or retrieve assignments require authentication via a JWT token. The token must be included in the Authorization header of the request in the following format:
 
